@@ -1,0 +1,18 @@
+@import '../scss/base/variables';
+@import '../scss/base/colors';
+@import '../scss/base/base';
+@import '../scss/base/utilities';
+@import '../scss/components/start';
+@import '../scss/components/personal_details';
+@import '../scss/components/inputgroup';
+@import '../scss/components/welcome';
+@import '../scss/components/loader';
+@import '../scss/components/instructions';
+@import '../scss/components/question';
+@import '../scss/components/summary';
+@import '../scss/components/results';
+
+/*
+@use 'base';
+@use 'components';
+*/

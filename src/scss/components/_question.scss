@@ -1,0 +1,66 @@
+.#{$custom}-question {
+    &__navbar {
+        background-color:#{$primary-green};
+        color:#{$primary-white};
+        display:flex;
+        justify-content: space-around;
+
+        div,h1 {
+            flex:1 1 0;
+        }
+
+        .#{$custom}-question__number {
+            text-align:center;
+        }
+
+        .#{$custom}-question__check-for-review {
+            margin:1em;
+            font-size:20px;
+            color:#{$secondary-gray};
+            input{
+                margin:0 0.5em;
+            }
+        }
+        .#{$custom}-question__check-for-review.active {
+            color:#{$primary-white};
+        }
+    }
+
+    &__body,&__options {
+        width:90%;
+    }
+    &__body {
+        margin:10% auto 0;
+        font-size:28px;
+    }
+    &__options {
+        margin:0 auto 10%;
+
+        &--option {
+            font-size:20px;
+        }
+        &--option.correct {
+            background-color:rgba(92,184,92,0.4);
+        }
+        &--option.wrong {
+            background-color:rgba(217,83,79,0.4);
+        }
+    }
+
+    &__action {
+        position:fixed;
+        bottom:2em;
+        right:2em;
+
+        .btn {
+            border-radius:0;
+            width:10em;
+        }
+    }
+    &__column {
+        &--cell {
+            display:block;
+            padding:0.6em;
+        }
+    }
+}

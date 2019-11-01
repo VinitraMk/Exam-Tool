@@ -1,0 +1,57 @@
+.#{$custom}-modal {
+    display:none;
+    position:fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    overflow:auto;
+    height:100%;
+    width:100%;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.4);
+
+    &__header {
+        padding:0.5em;
+        color:#{$white};
+        background-color:#{$primary-blk};
+    }
+
+    &__content {
+        background-color:#{$white};
+        margin:15% auto;
+        border:1px solid #{$dark-gray};
+        width:70%;
+    }
+
+    &__container {
+        padding:1em;
+    }
+
+    &__footer {
+        min-height:3em;
+        border-top:1px solid #a3a3a3;
+    }
+
+
+    .span-close {
+        color:#{$light-gray};
+        float:right;
+        font-size:28px;
+        font-weight:bolder;
+    }
+
+    .span-close:hover,
+    .span-close:focus {
+        color:white;
+        text-decoration:none;
+        cursor:pointer;
+    }
+
+    .btn-light {
+        border:1px solid #{$light-gray};
+    }
+
+    &.active {
+        display:block;
+    }
+}

@@ -1,0 +1,42 @@
+.#{$custom}-summary {
+    &__navbar {
+        background-color:#{$primary-green};
+        text-align: center;
+        color:#{$primary-white};
+    }
+    &__counts {
+        width:85%;
+        margin:1em auto;
+        display:flex;
+        justify-content: space-between;
+        div {
+            flex:1 1 0;
+        }
+    }
+    &__content {
+        width:85%;
+        margin:1em auto;
+
+        .row {
+            justify-content: flex-start;
+            .col {
+                padding:0;
+                .btn {
+                    width:2.5em;
+                    height:2.5em;
+                }
+            }
+        }
+    }
+
+    &__action {
+        position:fixed;
+        bottom:2em;
+        right:2em;
+
+        .btn {
+            border-radius:0;
+            width:10em;
+        }
+    }
+}

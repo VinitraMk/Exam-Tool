@@ -1,0 +1,11 @@
+.#{$custom}-results {
+    width:50%;
+    margin:15% auto;
+    background-color:#{$primary-green};
+    color:#{$primary-white};
+    text-align:center;
+
+    .btn-light {
+        color:#{$primary-green};
+    }
+}

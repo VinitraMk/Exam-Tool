@@ -1,0 +1,28 @@
+.top-navbar {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#{$primary-blk};
+
+    .nav-item {
+        float:left;
+
+        .nav-item__link {
+            display:block;
+            color:#{$primary-white};
+            text-align:center;
+            text-decoration:none;
+            padding:1em;
+        }
+
+        .nav-item__link:hover:not(.active) {
+            background-color:#{$secondary-blk};
+            color:#{$white};
+        }
+    }
+
+    .active {
+        background-color:#{$primary-green};
+    }
+}

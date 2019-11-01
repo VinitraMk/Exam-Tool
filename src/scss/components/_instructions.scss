@@ -1,0 +1,19 @@
+.#{$custom}-instructions {
+    &__heading{
+        text-align:center;
+    }
+
+    &__content {
+        margin:15% 10%;
+    }
+
+    &__action {
+        &--next {
+            border-radius:0px;
+            width:7em;
+            position: fixed;
+            bottom: 2em;
+            right: 2em;
+        }
+    }
+}

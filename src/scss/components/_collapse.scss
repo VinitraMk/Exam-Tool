@@ -1,0 +1,35 @@
+.collapsible-section {
+    &__toggle {
+        background-color:#{$primary-blk};
+        color:#{$white};
+        cursor:pointer;
+        padding:0.5em;
+        width:80%;
+        text-align:left;
+        outline:none;
+        border-radius:0px;
+        border:none;
+
+        i {
+            float: right;
+            margin: 0.2em;
+        }
+    }
+
+
+    &__toggle:hover {
+        background-color:#{$secondary-blk};
+
+    }
+    &.active {
+        background-color:#{$light-gray}
+    }
+
+    &__content {
+        width:80%;
+        display:none;
+        background:#{$white};
+        overflow:hidden;
+        padding:0.5em;
+    }
+}

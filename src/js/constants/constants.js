@@ -1,0 +1,10 @@
+export const CUSTOM="exam-tool";
+export const ADD_USER="add_user";
+export const FETCH_INSTRUCTIONS="fetch_instructions";
+export const READ_INSTRUCTIONS="read_instructions";
+export const FETCH_QUESTIONS="fetch_questions";
+export const READ_QUESTIONS="read_questions";
+export const SUBMIT_ANSWERS="submit_answers";
+export const SET_COUNTS="set_counts";
+export const COMPUTE_RESULTS="compute_results";
+export const SET_SCORE="set_score";

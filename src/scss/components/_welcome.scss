@@ -1,0 +1,14 @@
+.#{$custom}-welcome {
+    width:50%;
+    background:#{$primary-green};
+    color:#{$primary-white};
+    margin:15% auto;
+    padding:5% 10%;
+
+    p {
+        text-align:center;
+        .App-Link {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+$spacer:0.5em;
+
+@each $el in a,x,y,t,b,l,r {
+    @for $i from 1 through 8 {
+        .m-#{$el}-#{$i} {
+            @if $el=='a' {
+                margin:($spacer*$i);
+            }
+            @else if $el=='x' {
+                margin:auto ($spacer*$i);
+            }
+            @else if $el=='y' {
+                margin:($spacer*$i) auto;
+            }
+            @else if $el=='t' {
+                margin-top:($spacer*$i);
+            }
+            @else if $el=='b' {
+                margin-bottom:($spacer*$i);
+            }
+            @else if $el=='l' {
+                margin-left:($spacer*$i);
+            }
+            @else if $el=='r' {
+                margin-right:($spacer*$i);
+            }
+        }
+        .p-#{$el}-#{$i} {
+            @if $el=='a' {
+                padding:($spacer*$i);
+            }
+            @else if $el=='x' {
+                padding:auto ($spacer*$i);
+            }
+            @else if $el=='y' {
+                padding:($spacer*$i) auto;
+            }
+            @else if $el=='t' {
+                padding-top:($spacer*$i);
+            }
+            @else if $el=='b' {
+                padding-bottom:($spacer*$i);
+            }
+            @else if $el=='l' {
+                padding-left:($spacer*$i);
+            }
+            @else if $el=='r' {
+                padding-right:($spacer*$i);
+            }
+        }
+        
+    }
+
+}
