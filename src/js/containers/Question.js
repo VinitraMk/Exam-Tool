@@ -128,7 +128,6 @@ class QuestionPage extends React.Component {
             else {
                 this.setState({
                     count:this.state.count+1,
-                    unansweredcount:this.state.unansweredcount+1
                 })
             }
         }
@@ -140,7 +139,13 @@ class QuestionPage extends React.Component {
 
     nextQuestion() {
 
-        this.props.submitAnswers(this.getAnswers()); 
+        if(this.state.count===0) {
+            this.setState({
+                unansweredcount:this.props.noOfQuestions
+            });
+        }
+
+        this.getAnswers();
 
         if(this.state.count===this.props.noOfQuestions-1) {
             this.props.setCounts({
@@ -202,6 +207,7 @@ class QuestionPage extends React.Component {
     componentDidMount() {
         this.startClock();
     }
+
 
 
     render() {

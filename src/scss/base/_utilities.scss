@@ -1,7 +1,7 @@
 $spacer:0.5em;
 
 @each $el in a,x,y,t,b,l,r {
-    @for $i from 1 through 8 {
+    @for $i from 0 through 8 {
         .m-#{$el}-#{$i} {
             @if $el=='a' {
                 margin:($spacer*$i);

@@ -62,7 +62,7 @@ class SummaryPage extends React.Component {
                     <div className="row">
                         {this.props.questions.map((question,index)=>{
                             return(
-                                <div className="col m-a-2">
+                                <div className="col-1 m-a-2">
                                     {question['to-be-reviewed']?<button className='btn btn-warning'>{index+1}</button>:(question.isanswered?<button className="btn btn-success" disabled>{index+1}</button>:<button className="btn btn-secondary" disabled>{index+1}</button>)}
                                 </div>
                             )
